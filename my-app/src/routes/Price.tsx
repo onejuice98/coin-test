@@ -30,25 +30,16 @@ const BoxData = styled.span`
 interface PriceProps {
   data : any;
 }
-
+/* option 구성하기!
+interface IPriceOption {
+	option : number;
+}*/
 function Price({data} : PriceProps) {
-
+  //const [option, setOption] = useState(1);
+  
   return (
-    <>
-      <Box>
-        <BoxTitle> Highst Price  </BoxTitle>
-        <BoxData> 68692.137 </BoxData>
-      </Box>
-      <Box>
-        <BoxTitle> Date </BoxTitle>
-        <BoxData> 2021-11-10T16:51:15Z </BoxData>
-      </Box>
-      <Box>
-         <BoxTitle> Percent from present </BoxTitle>
-         <BoxData> -69.62 % </BoxData>
-       </Box>
-    </>
-    /* CORS Error,, bb
+
+    
     <>
       <Box>
         <BoxTitle> Highst Price  </BoxTitle>
@@ -62,8 +53,25 @@ function Price({data} : PriceProps) {
          <BoxTitle> Percent from present </BoxTitle>
          <BoxData> {`${data.percent_from_price_ath}%`} </BoxData>
        </Box>
+
+	  	<Box>
+         <BoxTitle> Percent change 1hour </BoxTitle>
+         <BoxData> {`${data.percent_change_1h}%`} </BoxData>
+       </Box>
+	  	  	<Box>
+         <BoxTitle> Percent change 7days </BoxTitle>
+         <BoxData> {`${data.percent_change_7d}%`} </BoxData>
+       </Box>
+	  	  	  	<Box>
+         <BoxTitle> Percent change 30days </BoxTitle>
+         <BoxData> {`${data.percent_change_30d}%`} </BoxData>
+       </Box>
+	  	  	  	  	<Box>
+         <BoxTitle> Percent change 1year </BoxTitle>
+         <BoxData> {`${data.percent_change_1y}%`} </BoxData>
+       </Box>
     </>
-    */
+    
   );
 }
   
