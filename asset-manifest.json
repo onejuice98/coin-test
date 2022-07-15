@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/coin-test/static/js/main.acdb40af.js",
+    "index.html": "/coin-test/index.html",
+    "main.acdb40af.js.map": "/coin-test/static/js/main.acdb40af.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.acdb40af.js"
+  ]
+}
